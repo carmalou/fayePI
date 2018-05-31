@@ -51,3 +51,37 @@ server.route({
         return returnYears;
     }
 });
+
+server.route({
+    method: 'GET',
+    path: '/romcoms/rating/{rating}',
+    handler: function(request, h) {
+        var romcoms = require('./data/rom-coms.movies.json');
+        var rating = request.params.rating.toUpperCase();
+
+        var returnRatings = _.filter(romcoms, function(e) {
+            return e.rating == rating;
+        });
+
+        if(returnRatings.length <= 0) {
+            return "The rating must be in the correct format: G, PG, PG-13, R";
+        }
+
+        return returnRatings;
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/romcoms/title/{title}',
+    handler: function(request, h) {
+        var romcoms = require('./data/rom-coms.movies.json');
+        var movieTitle = request.params.movieTitle;
+
+        var returnTitles = _.filter(romcoms, function(e) {
+            return e.movie_title == movieTitle;
+        });
+        
+        return returnTitles;
+    }
+});
