@@ -1,4 +1,5 @@
 const Hapi = require('hapi');
+const _ = require('lodash');
 
 const server = Hapi.server({
     port: process.env.PORT || 3000,
@@ -29,24 +30,24 @@ server.route({
 
 server.route({
     method: 'GET',
-    path: '/getromcoms',
+    path: '/romcoms',
     handler: function(request, h) {
         var romcoms = require('./data/rom-coms.movies.json');
         return romcoms
     }
 });
 
-// server.route({
-//     method: 'GET',
-//     path: '/romcoms/year/{year}',
-//     handler: function(request, h) {
-//         var romcoms = require('./data/rom-coms.movies.json');
-//         var year = encodeURIComponent(request.params.year);
+server.route({
+    method: 'GET',
+    path: '/romcoms/year/{year}',
+    handler: function(request, h) {
+        var romcoms = require('./data/rom-coms.movies.json');
+        var year = request.params.year;
 
-//         var returnYears = _.find(romcoms, function(e) {
-//             return e.year_released == year;
-//         });
+        var returnYears = _.filter(romcoms, function(e) {
+            return e.year_released == year;
+        });
 
-//         return returnYears;
-//     }
-// });
+        return returnYears;
+    }
+});
