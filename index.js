@@ -48,6 +48,10 @@ server.route({
             return e.year_released == year;
         });
 
+        if(returnYears.length <= 0) {
+            return [ ];
+        }
+
         return returnYears;
     }
 });
@@ -64,6 +68,9 @@ server.route({
         });
 
         if(returnRatings.length <= 0) {
+            if(rating == 'G' || rating == 'PG' || rating == 'PG-13' || rating == 'R') {
+                return [ ];
+            }
             return "The rating must be in the correct format: G, PG, PG-13, R";
         }
 
@@ -81,6 +88,10 @@ server.route({
         var returnTitles = _.filter(romcoms, function(e) {
             return e.movie_title == movieTitle;
         });
+
+        if(returnTitles.length <= 0) {
+            return [ ];
+        }
         
         return returnTitles;
     }

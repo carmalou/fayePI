@@ -11,50 +11,83 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <style>
+      li {
+        list-style-type: none;
+      }
+    </style>
+
   </head>
 
   <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Documentation</a>
-          </li>
-        </ul>
+    <nav>
+      <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
+        <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Documentation</a>
+        <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
       </div>
     </nav>
 
-    <main role="main">
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <div class="container">
-          <h1 class="display-4">Welcome to FayePI!</h1>
-          <p>FayePI is a "fake api". It offers API endpoints you can use to build dynamic webpages and practice AJAX requests and promises with fetch.</p>
-          <p>Head over to the documentation tab to see a list of endpoints.</p>
-          <p><a class="btn btn-primary btn-lg" href="#" role="button">Get Started &raquo;</a></p>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-3">Welcome to FayePI!</h1>
+            <p>FayePI is a "fake api". It offers API endpoints you can use to build dynamic webpages and practice AJAX requests and promises with fetch.</p>
+            <p>Head over to the documentation tab to see a list of endpoints.</p>
+  
+            <h1 class="display-6">Fake API?</h1>
+            <p>FayePI offers real endpoints that will return JSON data. What makes it "fake"? The data is just silly stuff like romantic comedies, but it's enough for practice. And the silliness makes it fun!</p>
+          </div>
         </div>
       </div>
 
-      <div class="container">
-          <div class="row">
-              <h1 class="display-5">Romantic Comedies</h1>
-              <ul class="list-group">
-                  
+      <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+        <div class="jumbotron">
+          <div class="container">
+            <h1 class="display-5">Romantic Comedies</h1>
+            <div>
+              <ul>
+                  <li>
+                      <code>https://fayepi.herokuapp.com/romcoms</code>
+
+                      <p>This endpoint will return all the romantic comedies from FayePI. It does not require any parameters.</p>
+                  </li>
+
+                  <li>
+                      <code>https://fayepi.herokuapp.com/romcoms/year/{year}</code>
+
+                      <p>This endpoint will return all romantic comedies from a given year. The year is passed in as a URL parameter. If there are no movies from the specified year in FayePI, the result will be an empty array.</p>
+                  </li>
+
+                  <li>
+                      <code>https://fayepi.herokuapp.com/romcoms/rating/{rating}</code>
+
+                      <p>This endpoint will return all romantic comedies with the specified rating, which is passed in as a URL parameter. The rating must be in the correct format: G, PG, PG-13, R. If there is no movie with that rating, the result will be an empty array.</p>
+                  </li>
+
+                  <li>
+                      <code>https://fayepi.herokuapp.com/romcoms/title/{title}</code>
+
+                      <p>This endpoint will return all romantic comedies with the specified title, which is passed in as a URL parameter. If there is no movie with that title, the result will be an empty array.</p>
+                  </li>
               </ul>
+            </div>
           </div>
+        </div>
       </div>
 
-    </main>
+      <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+          <div class="jumbotron">
+              <div class="container">
+                <p>
+                  If you like this project, please check out the person who made it: <a href="https://carmalou.com">Carmen Bourlon</a>. She's known as Carmalou across the interwebs. Carmen is a JavaScript lover in Oklahoma City. She's a <a href="https://www.twitter.com/carmalou">prolific tweeter</a> and likes to build silly projects, like FayePI. You can check out her <a href="https://www.github.com/carmalou">Github</a> to see what she's working on!
+                </p>
+              </div>
+          </div>
+      </div>
+    </div>
 
     <footer class="container">
       <p>&copy; FayePI 2017-2018</p>
