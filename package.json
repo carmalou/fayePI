@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "hapi": "^17.5.0",
+    "inert": "^5.1.0",
     "lodash": "^4.17.10"
   }
 }

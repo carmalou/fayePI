@@ -8,6 +8,7 @@ const server = Hapi.server({
 
 const init = async () => {
 
+    await server.register(require('inert'));
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
 };
@@ -19,14 +20,6 @@ process.on('unhandledRejection', (err) => {
 });
 
 init();
-
-server.route({
-    method: 'GET',
-    path: '/',
-    handler: function(request, h) {
-        return 'Welcome to FayePI! ';
-    }
-});
 
 server.route({
     method: 'GET',
@@ -94,5 +87,16 @@ server.route({
         }
         
         return returnTitles;
+    }
+});
+
+server.route({
+    method: 'GET',
+    path: '/{param*}',
+    handler: {
+        directory: {
+            path: 'public',
+            index: ['index.html']
+        }
     }
 });
