@@ -159,6 +159,7 @@
           
                   <div>
                     <p>The code below is using a <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">fetch request</a> which returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a>. You'll notice in our first function we are using <code>.json()</code>, which also returns a promise. Any changes we would want to make to the response would take place in the second function, where we are logging the response.</p>
+                    <p>We're using the <code>.json()</code> function because <code>fetch</code> returns a <code>response</code> object, but what we really want is a JSON object with the data from FayePI in it. <code>.json()</code>  does the trick!</p>
                     <br />
                     <pre>
                       <code>
