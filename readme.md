@@ -25,6 +25,6 @@ We also want to expand the types of data returned. Here are ways you can help:
 
 3. Check over our documentation and help us make FayePI even better.
 
-4. Write code examples for beginners to help them get started.
+4. Write code examples to show how to get started with FayePI.
 
 5. Anything else you can think of!
