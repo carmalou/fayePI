@@ -25,6 +25,7 @@
       <div class="nav nav-tabs" id="nav-tab" role="tablist">
         <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Home</a>
         <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Documentation</a>
+        <a class="nav-item nav-link" id="nav-code-examples-tab" data-toggle="tab" href="#nav-code-examples" role="tab" aria-controls="nav-code-examples" aria-selected="false">Code Examples</a>
       </div>
     </nav>
 
@@ -45,6 +46,8 @@
       <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
         <div class="jumbotron">
           <div class="container">
+            <h1 class="display-3">Documentation</h1>
+            <br />
             <h1 class="display-5">Romantic Comedies</h1>
             <div>
               <ul>
@@ -115,11 +118,69 @@
         </div>
       </div>
 
+      <div class="tab-pane fade" id="nav-code-examples" role="tabpanel" aria-labelledby="nav-code-examples-tab">
+          <div class="jumbotron">
+              <div class="container">
+                <h1 class="display-3">Code Examples</h1>
+
+                <h3 class="display-5">
+                  FayePI AJAX request
+                </h3>
+
+                <div>
+                  <p>The code below is using an <a href="https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest">AJAX request</a> to grab data from FayePI. Any changes to the response would take place in the <code>if statement</code>.</p>
+                  <br />
+                  <pre>
+                    <code>
+                      var request = new XMLHttpRequest();
+                      request.open('GET', 'https://fayepi.herokuapp.com/romcoms', true);
+
+                      request.onload = function() {
+                        if (request.status >= 200 && request.status < 400) {
+                          var data = JSON.parse(request.responseText);
+                        // now that we have our data, we can do something with it, like render it to a page
+                        } else {
+                        // we would handle for any errors here
+                        }
+                      };
+
+                      request.onerror = function() {
+                        // you might log here that there was an error or let the user know there's been an error.
+                      };
+
+                      request.send();
+                    </code>
+                  </pre>
+                </div>
+
+                <h3 class="display-5">
+                    FayePI window.fetch
+                  </h3>
+          
+                  <div>
+                    <p>The code below is using a <a href="https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/fetch">fetch request</a> which returns a <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise">promise</a>. You'll notice in our first function we are using <code>.json()</code>, which also returns a promise. Any changes we would want to make to the response would take place in the second function, where we are logging the response.</p>
+                    <br />
+                    <pre>
+                      <code>
+                          window.fetch('https://fayepi.herokuapp.com/romcoms')
+                          .then(function(response) {
+                            response.json()
+                              .then(function(response2) {
+                                console.log(response2);
+                                })
+                          });
+                      </code>
+                    </pre>
+                  </div>
+              </div>
+          </div>
+      </div>
+
     </div>
 
     <footer class="container">
       <p>&copy; FayePI 2017-2018</p>
-      <p>Made with ❤️by <a href="https://carmalou.com">carmalou</a>.</p>
+      <p>Made with ❤ ️by <a href="https://carmalou.com">carmalou</a>.</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
