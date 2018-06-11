@@ -114,6 +114,30 @@
 
               </ul>
             </div>
+
+            <h1 class="display-5">U.S. Population 1950-1959</h1>
+            <div>
+              <ul>
+                  <li>
+                      <code>GET https://fayepi.herokuapp.com/population/decade/1950</code>
+
+                      <p>This endpoint will return all of the U.S. population data from 1950-1959. It does not require any parameters.</p>
+                  </li>
+
+                  <li>
+                    <code>GET https://fayepi.herokuapp.com/population/decade/1950/year/{year}</code>
+
+                    <p>This endpoint will return all of the U.S. population data from a given year between 1950-1959. It requires a single parameter -- the year (a number) -- which is passed in as a URL parameter.</p>
+                  </li>
+
+                  <li>
+                    <code>GET https://fayepi.herokuapp.com/population/decade/1950/age/{age}</code>
+
+                    <p>This endpoint will return all of the U.S. population data between 1950-1959 for a given age. It requires a single parameter -- the age (a number) -- which is passed in as a URL parameter.</p>
+                  </li>
+
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -181,7 +205,7 @@
 
     <footer class="container">
       <p>&copy; FayePI 2017-2018</p>
-      <p>Made with ❤️ by <a href="https://carmalou.com">carmalou</a>.</p>
+      <p>Made with ❤ ️by <a href="https://carmalou.com">carmalou</a>.</p>
     </footer>
 
     <!-- Bootstrap core JavaScript
