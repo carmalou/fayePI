@@ -1,6 +1,7 @@
 const Hapi = require('hapi');
 const romcoms = require('./routes/romcoms.routes.js');
 const nobelprizes = require('./routes/nobelprize.routes.js');
+const population1950 = require('./routes/population-1950.routes.js');
 
 const server = Hapi.server({
     port: process.env.PORT || 3000,
@@ -16,6 +17,7 @@ const init = async () => {
     console.log(`Server running at: ${server.info.uri}`);
     romcoms(server);
     nobelprizes(server);
+    population1950(server);
 };
 
 process.on('unhandledRejection', (err) => {
