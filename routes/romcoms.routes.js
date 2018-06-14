@@ -56,10 +56,10 @@ module.exports = function romcomroutes(server) {
         path: '/romcoms/title/{title}',
         handler: function(request, h) {
             var romcoms = require('./../data/rom-coms.movies.json');
-            var movieTitle = request.params.movieTitle;
+            var movieTitle = decodeURIComponent(request.params.title);
 
             var returnTitles = _.filter(romcoms, function(e) {
-                return e.movie_title == movieTitle;
+                return e.movie_title.toLowerCase() == movieTitle.toLowerCase();
             });
 
             if(returnTitles.length <= 0) {
