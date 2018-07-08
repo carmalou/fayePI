@@ -1,7 +1,5 @@
 self.oninstall = function() {
-    console.log('install!');
     caches.open('fayeFrontEnd').then(function(cache) {
-        console.log('opened cache');
         cache.addAll([
             '/',
             'index.html',
