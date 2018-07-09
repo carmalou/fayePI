@@ -1,5 +1,5 @@
 self.oninstall = function() {
-    caches.open('fayeFrontEnd').then(function(cache) {
+    caches.open('fayeFrontEndV1').then(function(cache) {
         cache.addAll([
             '/',
             'index.html',
@@ -33,4 +33,3 @@ self.onfetch = function(event) {
         })
     );
 }
-  
