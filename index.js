@@ -1,4 +1,5 @@
 const Hapi = require('hapi');
+const documentation = require('./routes/documentation.routes.js');
 const romcoms = require('./routes/romcoms.routes.js');
 const nobelprizes = require('./routes/nobelprize.routes.js');
 const population1950 = require('./routes/population-1950.routes.js');
@@ -13,8 +14,11 @@ const server = Hapi.server({
 
 const init = async () => {
     await server.register(require('inert'));
+    await server.register(require('hapi-require-https'));
     await server.start();
     console.log(`Server running at: ${server.info.uri}`);
+
+    documentation(server);
     romcoms(server);
     nobelprizes(server);
     population1950(server);
@@ -24,5 +28,7 @@ process.on('unhandledRejection', (err) => {
     console.log(err);
     process.exit(1);
 });
+
+
 
 init();

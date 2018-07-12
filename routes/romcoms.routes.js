@@ -69,15 +69,4 @@ module.exports = function romcomroutes(server) {
             return returnTitles;
         }
     });
-
-    server.route({
-        method: 'GET',
-        path: '/{param*}',
-        handler: {
-            directory: {
-                path: 'public',
-                index: ['index.html']
-            }
-        }
-    });
 }
