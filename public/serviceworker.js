@@ -21,6 +21,10 @@ self.oninstall = function() {
     })
 }
 
+self.onactivate = function(event) {
+    console.log('sw is up and running!');
+}
+
 self.onfetch = function(event) {
     event.respondWith(
         caches.match(event.request)
