@@ -3,6 +3,7 @@ const documentation = require('./routes/documentation.routes.js');
 const romcoms = require('./routes/romcoms.routes.js');
 const nobelprizes = require('./routes/nobelprize.routes.js');
 const population1950 = require('./routes/population-1950.routes.js');
+const showtimes = require('./routes/showtimes.routes.js');
 
 const server = Hapi.server({
     port: process.env.PORT || 3000,
@@ -22,6 +23,7 @@ const init = async () => {
     romcoms(server);
     nobelprizes(server);
     population1950(server);
+    showtimes(server);
 };
 
 process.on('unhandledRejection', (err) => {
