@@ -27,7 +27,7 @@ module.exports = function showtimes(server) {
             var responseobj = {
                 id: 0,
                 movie_title: "",
-                full_description: "",
+                movie_description: "",
                 rating: "",
                 movie_pic: "",
                 showtimes: ""
@@ -41,5 +41,16 @@ module.exports = function showtimes(server) {
 
 
         }  
+    })
+
+    server.route({
+        method: 'GET',
+        path: '/showtimes/getbytime',
+        handler: function(request, h) {
+            var romcoms = require('./../data/showtimes.json');
+            
+
+            return _.sortBy(romcoms, []);
+        }
     })
 }
