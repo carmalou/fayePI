@@ -20,7 +20,7 @@ module.exports = function stale(server) {
         },
         options: {
             cache: {
-                expiresIn: s
+                expiresIn: 600
             }
         }
     })
