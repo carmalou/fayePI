@@ -2,8 +2,6 @@ module.exports = function stale(server) {
     var d = new Date();
     d.setMinutes(d.getMinutes() - 10);
 
-    var s = 600 // 10 minutes, expressed in seconds
-
     var expires = new Date();
     expires.setSeconds(expires.getSeconds() - 10);
 
@@ -19,8 +17,8 @@ module.exports = function stale(server) {
             return rez;
         },
         options: {
-            cache: {
-                expiresIn: 600
+            cors: {
+                maxAge: 600
             }
         }
     })
