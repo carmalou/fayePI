@@ -13,13 +13,9 @@ module.exports = function stale(server) {
             rez.type('application/json');
             rez.header('Date', d);
             rez.header('Expires', expires);
+            rez.header('Cache-Control', 'max-age=600');
 
             return rez;
-        },
-        options: {
-            cors: {
-                maxAge: 600
-            }
         }
     })
 }
