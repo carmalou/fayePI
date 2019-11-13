@@ -1,5 +1,5 @@
 self.oninstall = function() {
-    caches.open('fayeFrontEndV1').then(function(cache) {
+    caches.open('fayeFrontEndV2').then(function(cache) {
         cache.addAll([
             '/',
             'index.html',
