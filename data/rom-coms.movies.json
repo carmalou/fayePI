@@ -78,5 +78,56 @@
         "movie_actors": ["Amy Adams", "Patrick Dempsey", "Susan Sarandon", "James Marsden"],
         "year_released": 2007,
         "rating": "PG"
+    },
+    {
+        "id": 9,
+        "movie_title": "Crazy Rich Asians",
+        "movie_pic": "https://images-na.ssl-images-amazon.com/images/I/91tAfJbWnEL._RI_SX300_.jpg",
+        "movie_description": "This contemporary romantic comedy, based on a global bestseller, follows native New Yorker Rachel Chu to Singapore to meet her boyfriend's family.",
+        "movie_link": "https://www.imdb.com/title/tt3104988/",
+        "movie_actors": ["Constance Wu", "Henry Golding", "Michelle Yeoh"],
+        "year_released": 2018,
+        "rating": "PG-13"
+    },
+    {
+        "id": 10,
+        "movie_title": "Bridesmaids",
+        "movie_pic": "https://images-na.ssl-images-amazon.com/images/I/81OS%2B%2BNlysL._SY445_.jpg",
+        "movie_description": "Competition between the maid of honor and a bridesmaid, over who is the bride's best friend, threatens to upend the life of an out-of-work pastry chef.",
+        "movie_link": "https://www.imdb.com/title/tt1478338/",
+        "movie_actors": ["Kristen Wiig", "Maya Rudolph", "Rose Byrne"],
+        "year_released": 2011,
+        "rating": "R"
+    },
+    {
+        "id": 11,
+        "movie_title": "50 First Dates",
+        "movie_pic": "https://images-na.ssl-images-amazon.com/images/I/91E-15poiWL._SY445_.jpg",
+        "movie_description": "Henry Roth is a man afraid of commitment up until he meets the beautiful Lucy. They hit it off and Henry think he's finally found the girl of his dreams, until he discovers she has short-term memory loss and forgets him the next day.",
+        "movie_link": "https://www.imdb.com/title/tt0343660/",
+        "movie_actors": ["Adam Sandler", "Drew Barrymore", "Rob Schneider"],
+        "year_released": 2004,
+        "rating": "PG-13"
+    },
+    {
+        "id": 12,
+        "movie_title": "The Big Sick",
+        "movie_pic": "https://images-na.ssl-images-amazon.com/images/I/91tlYtlgTDL._SY355_.jpg",
+        "movie_description": "Pakistan-born comedian Kumail Nanjiani and grad student Emily Gardner fall in love but struggle as their cultures clash. When Emily contracts a mysterious illness, Kumail finds himself forced to face her feisty parents, his family's expectations, and his true feelings.",
+        "movie_link": "https://www.imdb.com/title/tt5462602/",
+        "movie_actors": ["Kumail Nanjiani", "Zoe Kazan", "Holly Hunter"],
+        "year_released": 2017,
+        "rating": "R"
+    },
+      {
+        "id": 13,
+        "movie_title": "Love Actually",
+        "movie_pic": "https://images-na.ssl-images-amazon.com/images/I/71dGpTdISzL._SX355_.jpg",
+        "movie_description": "Follows the lives of eight very different couples in dealing with their love lives in various loosely interrelated tales all set during a frantic month before Christmas in London, England.",
+        "movie_link": "https://www.imdb.com/title/tt0314331/",
+        "movie_actors": ["Hugh Grant", "Martine McCutcheon", "Liam Neeson"],
+        "year_released": 2003,
+        "rating": "R"
     }
+    
 ]
