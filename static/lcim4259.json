@@ -1,0 +1,44 @@
+{
+  "props": {
+    "pageProps": {
+      "pageData": {
+        "listing": {
+          "id": "lcim4259",
+          "name": "My Fake Listing",
+          "address": "1600 Pennsylvania Avenue",
+          "location": {
+            "city": "Atlanta",
+            "lat": 33.8135,
+            "lng": -84.3944,
+            "neighborhoods": ["Colonial", "Buckhead"],
+            "state": "Georgia",
+            "stateAbbr": "GA",
+            "zip": "30309"
+          },
+          "photos": [
+            {
+              "id": "2jlsc9sd",
+              "caption": "",
+              "category": ""
+            },
+            {
+              "id": "ab324c",
+              "caption": "",
+              "category": ""
+            },
+            {
+              "id": "al97sk2",
+              "caption": "",
+              "category": ""
+            },
+            {
+              "id": "jsl902lcs",
+              "caption": "",
+              "category": ""
+            }
+          ]
+        }
+      }
+    } 
+  }
+}
