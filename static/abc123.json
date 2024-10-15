@@ -1,36 +1,37 @@
 {
-          "id": "abc123",
-          "name": "My Fake Listing",
-          "address": "1600 Pennsylvania Avenue",
-          "location": {
-            "city": "Atlanta",
-            "lat": 33.8135,
-            "lng": -84.3944,
-            "neighborhoods": ["Colonial", "Buckhead"],
-            "state": "Georgia",
-            "stateAbbr": "GA",
-            "zip": "30309"
-          },
-          "photos": [
-            {
-              "id": "2jlsc9sd",
-              "caption": "",
-              "category": ""
-            },
-            {
-              "id": "ab324c",
-              "caption": "",
-              "category": ""
-            },
-            {
-              "id": "al97sk2",
-              "caption": "",
-              "category": ""
-            },
-            {
-              "id": "jsl902lcs",
-              "caption": "",
-              "category": ""
-            }
-          ]
-        }
+  "id": "abc123",
+  "name": "My Fake Listing",
+  "address": "1600 Pennsylvania Avenue",
+  "location": {
+    "city": "Atlanta",
+    "lat": 33.8135,
+    "lng": -84.3944,
+    "neighborhoods": ["Colonial", "Buckhead"],
+    "state": "Georgia",
+    "stateAbbr": "GA",
+    "zip": "30309"
+  },
+  "photos": [
+    {
+      "id": "e835010dd8a13ec0250b061639795c0e",
+      "caption": null,
+      "category": "Kitchen"
+    },
+    {
+      "id": "b54b54ac00bf3595c3647fe813f58442",
+      "caption": null,
+      "category": "Kitchen"
+    },
+    {
+      "id": "9f0cd3172349112ef86b39fb0f639521",
+      "caption": null,
+      "category": "Kitchen"
+    },
+    {
+      "id": "ba155b686226c3613f6a792ca6fc38b1",
+      "caption": null,
+      "category": "Living Room"
+    }
+  ],
+  "urlPathname": "/georgia/sandy-springs-apartments/preserve-at-dunwoody-4-abc123"
+}
