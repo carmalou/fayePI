@@ -2,9 +2,10 @@
   "id": "slciwk526",
   "name": "My Fake Listing",
   "address": "1600 Pennsylvania Avenue",
-  "location": {
+  "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat pretium pharetra torquent penatibus bibendum curae. Eu feugiat malesuada habitasse pulvinar elementum purus, egestas penatibus. Risus elementum consequat himenaeos proin himenaeos. Magna potenti nunc ac viverra ex iaculis dolor orci. Vel cubilia curae aliquam morbi non aliquam. Netus enim penatibus varius inceptos nibh euismod.",
+"location": {
     "city": "Atlanta",
-"description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat pretium pharetra torquent penatibus bibendum curae. Eu feugiat malesuada habitasse pulvinar elementum purus, egestas penatibus. Risus elementum consequat himenaeos proin himenaeos. Magna potenti nunc ac viverra ex iaculis dolor orci. Vel cubilia curae aliquam morbi non aliquam. Netus enim penatibus varius inceptos nibh euismod.",
+
     "lat": 33.8135,
     "lng": -84.3944,
     "neighborhoods": ["Colonial", "Buckhead"],
