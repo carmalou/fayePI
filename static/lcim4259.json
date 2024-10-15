@@ -3,6 +3,7 @@
   "name": "My Fake Listing",
   "address": "1600 Pennsylvania Avenue",
   "description": "Lorem ipsum odor amet, consectetuer adipiscing elit. Placerat pretium pharetra torquent penatibus bibendum curae. Eu feugiat malesuada habitasse pulvinar elementum purus, egestas penatibus. Risus elementum consequat himenaeos proin himenaeos. Magna potenti nunc ac viverra ex iaculis dolor orci. Vel cubilia curae aliquam morbi non aliquam. Netus enim penatibus varius inceptos nibh euismod.",
+"propertyType": "HOUSE",
 "location": {
     "city": "Atlanta",
 
@@ -35,5 +36,37 @@
       "category": "Living Room"
     }
   ],
-  "urlPathname": "/north-dakota/bismarck-apartments/preserve-at-dunwoody-4-lcim4259"
+  "amenitiesWithGroups": [
+    {
+        "category": "Living Space",
+        "name": "Washer & Dryer In Unit",
+        "highlight": true
+    },
+    {
+        "category": "Perks",
+        "name": "Extra Storage",
+        "highlight": true
+    },
+    {
+        "category": "Kitchen",
+        "name": "Dishwasher",
+        "highlight": true
+    },
+    {
+        "category": "Outdoor Space",
+        "name": "Deck",
+        "highlight": true
+    },
+    {
+        "category": "Outdoor Space",
+        "name": "Patio",
+        "highlight": true
+    },
+    {
+        "category": "Features",
+        "name": "Swimming Pool",
+        "highlight": true
+    }
+],
+"urlPathname": "/north-dakota/bismarck-apartments/preserve-at-dunwoody-4-lcim4259"
 }
